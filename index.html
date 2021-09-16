@@ -1,0 +1,87 @@
+<!-- Only the calculator has been redesigned. Everything else on the page was stuff like searchbars and links to other parts of the site. These I did not include
+naturally, but I left placeholders of them to keep the appearance of the website intact. To demonstrate that it's a redesign of *that* webpage to improve its 
+usability and not just me making a random calculator. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scientific Calculator - Online Scientific Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="calculator.js" type="module"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>
+                Online-Calculator
+            </h1>
+            <ul>
+                <li>
+                    <a href="">Change Language...</a> <!-- Doesn't do anything but kept to show what the site would look like -->
+                    <ul>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form>
+                <label for="search">Search: </label>
+                <input id="search" type="search" placeholder="Search..."> <!-- Doesn't do anything but kept to show what the site would look like -->
+            </form>
+        </header>
+        <main>
+            <section>
+                <h2>This is our most Simple Calculator - Big, Easy to use online and free!</h2>
+                <p>Check out the simple calculator!</p>
+                <p>This simple online calculator should be great for younger users where more advanced features are not needed.</p>
+            </section>
+            <div id="calculator">
+                <div id="output">
+                    <p data-previous-display id="previous-display">0</p>
+                    <p data-current-display id="current-display">0</p>
+                </div>
+                <button data-AC type="button" class="span-two"><ul><li>AC<em>All Clear</em></li></ul></button>
+                <button data-DEL type="button"><ul><li>DEL<em>Delete</em></li></ul></button>
+                <button data-operator type="button">&#247;</button>
+                <button data-numeral type="button">1</button>
+                <button data-numeral type="button">2</button>
+                <button data-numeral type="button">3</button>
+                <button data-operator type="button">&#215;</button>
+                <button data-numeral type="button">4</button>
+                <button data-numeral type="button">5</button>
+                <button data-numeral type="button">6</button>
+                <button data-operator type="button">&#43;</button>
+                <button data-numeral type="button">7</button>
+                <button data-numeral type="button">8</button>
+                <button data-numeral type="button">9</button>
+                <button data-operator type="button" ><span aria-label="minus">&#8722;</span></button> 
+                <!-- Aria-labels because the screen reader doesn't seem to be reading these buttons properly -->
+                <button data-operator type="button"><span aria-label="decimal point">&#46;</span></button>
+                <button data-numeral type="button">0</button>
+                <button data-equals type="button" class="span-two">&#61;</button>
+            </div>
+            <a title="Use the Online Calculator Full Screen" href="fullscreen.html">
+            Use the Simple Calculator Full Screen</a>
+            <nav aria-label="Other Calculators">
+                <ul> <!-- Don't't do anything but kept to show what the site would look like -->
+                    <li><a>Other</a><em> - I took out the actual links since they weren't relevant.</em></li>
+                    <li><a>Calculator</a><em> - But I put these placeholders here just to show what the design would look like.</em></li>
+                    <li><a>Links</a><em> - Not much else to add.</em></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <nav aria-label="Other links"> <!-- Don't't do anything but kept to show what the site would look like -->
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="" >News / Blog</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Placeholders</a></li>
+                    <li><a href="">etc.</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

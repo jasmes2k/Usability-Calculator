@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+main { 
+    margin-left: 1em;
+    text-align: center;
+    padding-bottom: 2.5em;
+}
+
+header {
+    min-height: 5em;
+    width: 100%;
+    top: 0;
+    margin-bottom: 0.5em;
+    background-image: url(header.png);
+    background-repeat: repeat-x;
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    position: relative;
+    margin: 0.25em;
+}
+
+header form {
+    float: right;
+    position: relative;
+    margin: 0.75em;
+}
+
+ul {
+    padding: 0;
+}
+
+header>ul {
+    float: right;
+    display: none;
+    margin: 0.75em;
+}
+
+header>ul>li {
+    display: inline;
+}
+
+header>ul>li>a {
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    color: black;
+}
+
+header li ul {
+    display: none;
+    position: absolute;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-image: url(header.png);
+    background-position: center bottom;
+    border: 1px solid black;
+    text-align: left;
+}
+
+header li:hover ul {
+    display: block;
+}
+
+header li ul a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: black;
+}
+
+header li ul li {
+    margin: 0.1em;
+}
+
+header li ul a:hover {
+    text-decoration: none;
+    background-color: lightgray;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    border: 1px solid black;
+    margin: 0.25em;
+}
+
+nav li a {
+    text-decoration: none;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+nav a {
+    color: black;
+}
+
+li em {
+    display: none;
+}
+
+li:hover em, button:hover em {
+    display: block;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    border: 1px solid black;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    min-height: 2.5em;
+    background-color: black;
+}
+
+ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 5em);
+    grid-template-rows: minmax(3em, auto) repeat(5, 3em);
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+    background-color: #bfc6e199;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+#output {
+    grid-column: 1 / -1;
+    background-color: rgb(89, 89, 89);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0.5em;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid black;
+    text-align: right;
+  }
+  
+  #output #previous-display {
+    color: rgba(255, 255, 255, .75);
+    font-size: 15px;
+    margin:0.5em;
+  }
+  
+  #output #current-display {
+    color: white;
+    font-size: 20px;
+    margin:0.5em;
+  }
+
+  section {
+      font-weight: bold;
+      background-color: lightgray;
+      border: 1px solid darkgray;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.5em;
+  }
+
+  @media only screen and (min-width: 800px) {
+    section {
+        width: 30%;
+    }
+
+    header>ul {
+        display: block;
+    }
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scientific Calculator - Online Scientific Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="calculator.js" type="module"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    </head>
+    <body>
+        <main>
+            <article id="calculator">
+                <div id="output">
+                    <p data-previous-display id="previous-display">0</p>
+                    <p data-current-display id="current-display">0</p>
+                </div>
+                <button data-AC type="button" class="span-two"><ul><li>AC<em>All Clear</em></li></ul></button>
+                <button data-DEL type="button"><ul><li>DEL<em>Delete</em></li></ul></button>
+                <button data-operator type="button">&#247;</button>
+                <button data-numeral type="button">1</button>
+                <button data-numeral type="button">2</button>
+                <button data-numeral type="button">3</button>
+                <button data-operator type="button">&#215;</button>
+                <button data-numeral type="button">4</button>
+                <button data-numeral type="button">5</button>
+                <button data-numeral type="button">6</button>
+                <button data-operator type="button">&#43;</button>
+                <button data-numeral type="button">7</button>
+                <button data-numeral type="button">8</button>
+                <button data-numeral type="button">9</button>
+                <button data-operator type="button" ><span aria-label="minus">&#8722;</span></button> 
+                <!-- Aria-labels because the screen reader doesn't seem to be reading these buttons properly -->
+                <button data-operator type="button"><span aria-label="decimal point">&#46;</span></button>
+                <button data-numeral type="button">0</button>
+                <button data-equals type="button" class="span-two">&#61;</button>
+            </article>
+        </main>
+    </body>
+</html>
